@@ -1,0 +1,114 @@
+/**
+ *
+ *Navbar Section Style
+ *
+**/
+
+nav {
+  background-color: #50695ee5;
+}
+nav .navbar-brand {
+  width: 3.3em;
+}
+header .sticky-top {
+  position: fixed !important;
+}
+header .navbar-contact-info {
+  top: 10px;
+  right: 12px;
+  width: 460px;
+  list-style: none;
+}
+.main-btn {
+  border: none;
+  border-radius: 0;
+  padding: 5px 34px;
+  background-color: #dbb667;
+}
+.navbar-nav {
+  --bs-nav-link-color: #fff;
+}
+
+/**
+ *
+ *Hero Section Style
+ *
+**/
+
+.hero-section {
+  height: 65vh;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  background-image: url("/assets/img/Rezide-Internals-Hero-Section.jpg");
+}
+.hero-section .hero-section-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #fff;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  flex-flow: wrap column;
+  justify-content: center;
+  z-index: 1;
+}
+.hero-section .hero-section-info h1 {
+  font-size: 55px;
+  margin-top: 55px;
+}
+.hero-section .hero-section-info .hero-section-logo {
+  width: 54%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.hero-section .hero-section-info .hero-section-logo .line {
+  width: 245px;
+  height: 1px;
+  background-color: #ffffff73;
+}
+.black-line {
+  width: 100%;
+  height: 1px;
+  background-color: #6e6e6e73;
+}
+.hero-section .card-img-overlay {
+  background: rgba(56, 77, 64, 0.81);
+}
+.hero-section .arrow-down img{
+  opacity: .3;
+  width: 25px;
+}
+.hero-section .search {
+    position: absolute;
+    bottom: -20px;
+}
+.hero-section .search .form-control {
+  padding: 10px 69px;
+}
+.hero-section .search .input-group .btn {
+  border-radius: 0;
+  background-color: #fff;
+  border-bottom: 5px solid #4d665a;
+}
+.hero-section .search .search-btn {
+  background-color: #dfbe78 !important;
+  border: none !important;
+}
+.hero-section .search .input-group input {
+  border-radius: 0;
+  border-bottom: 5px solid #4d665a;
+}
+
+/**
+ *
+ *About Section Style
+ *
+**/
+
+.about .about-more-info li{
+    list-style: none;
+}
