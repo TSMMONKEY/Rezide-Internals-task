@@ -3,12 +3,44 @@
  *Navbar Section Style
  *
 **/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+p {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0px;
+  color: #696969;
+  opacity: 1;
+}
+h2 {
+  font: normal normal bold 38px/47px Libre Baskerville;
+  letter-spacing: 0px;
+  color: #464646;
+  opacity: 1;
+}
+h3 {
+  font: normal normal bold 30px/37px Libre Baskerville;
+}
+a{
+  text-decoration: none;
+}
+.logo-with-no-text {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
 
 nav {
   background-color: #50695ee5;
 }
 nav .navbar-brand {
-  width: 3.3em;
+  width: 3.8em;
 }
 header .sticky-top {
   position: fixed !important;
@@ -20,10 +52,17 @@ header .navbar-contact-info {
   list-style: none;
 }
 .main-btn {
+  width: 250px;
   border: none;
+  text-transform: capitalize;
+  padding: 13px 0;
   border-radius: 0;
-  padding: 5px 34px;
-  background-color: #dbb667;
+  font: normal normal bold 12px/15px Termina;
+  letter-spacing: 2.16px;
+  color: #454545;
+  text-transform: uppercase;
+  background-color: #e0be77;
+  margin: 0 auto;
 }
 .navbar-nav {
   --bs-nav-link-color: #fff;
@@ -36,7 +75,7 @@ header .navbar-contact-info {
 **/
 
 .hero-section {
-  height: 65vh;
+  height: 82vh;
   position: relative;
   background-size: 100%;
   background-position: center;
@@ -55,44 +94,60 @@ header .navbar-contact-info {
   z-index: 1;
 }
 .hero-section .hero-section-info h1 {
-  font-size: 55px;
+  font: normal normal normal 70px/87px Libre Baskerville;
+  letter-spacing: 0.7px;
+  font-size: 75px;
   margin-top: 55px;
 }
+.hero-section .hero-section-info p {
+  text-align: center;
+  font: normal normal normal 17px/20px Termina;
+  letter-spacing: 1.7px;
+  color: #ffffff;
+}
 .hero-section .hero-section-info .hero-section-logo {
-  width: 54%;
+  width: 56vw;
   display: flex;
+  max-width: 702px;
   align-items: center;
   align-content: center;
   justify-content: space-between;
 }
 .hero-section .hero-section-info .hero-section-logo .line {
-  width: 245px;
+  width: 45%;
   height: 1px;
   background-color: #ffffff73;
 }
 .black-line {
-  width: 100%;
+  width: 47%;
   height: 1px;
   background-color: #6e6e6e73;
 }
 .hero-section .card-img-overlay {
-  background: rgba(56, 77, 64, 0.81);
+  background: #3d594d;
+  opacity: 0.79;
 }
-.hero-section .arrow-down img{
-  opacity: .3;
+.hero-section .arrow-down img {
+  opacity: 0.3;
   width: 25px;
 }
 .hero-section .search {
-    position: absolute;
-    bottom: -20px;
+  width: 80%;
+  height: 82px;
+  bottom: -37px;
+  position: absolute;
 }
 .hero-section .search .form-control {
   padding: 10px 69px;
 }
+.hero-section .search .input-group {
+  height: 100%;
+}
 .hero-section .search .input-group .btn {
   border-radius: 0;
-  background-color: #fff;
   border-bottom: 5px solid #4d665a;
+  box-shadow: 10px 13px 16px #00000029;
+  background: #ffffff 0% 0% no-repeat padding-box;
 }
 .hero-section .search .search-btn {
   background-color: #dfbe78 !important;
@@ -109,6 +164,116 @@ header .navbar-contact-info {
  *
 **/
 
-.about .about-more-info li{
-    list-style: none;
+.about .about-more-info li {
+  list-style: none;
+}
+.about .about-more-info li img {
+  width: 50px;
+}
+
+.instant-valuation .image-frame .property-info .card {
+  width: 100%;
+  border: none;
+  background: #ecefed;
+}
+.instant-valuation .image-frame .first-frame-info {
+  border: none;
+  background: #ecefed;
+}
+.instant-valuation .image-frame .first-frame-info h2 {
+  color: #435f52;
+}
+
+.descover-more .second-section {
+  background: #ebefed;
+}
+
+.other-services {
+  padding: 0 7%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("/assets/img/BACKGROUND.png");
+}
+.other-services .row {
+  justify-content: space-between;
+}
+.other-services .logo-with-no-text .black-line {
+  background-color: #ffffff73 !important;
+}
+.other-services .col-6 {
+  background: #fff;
+  padding: 60px 50px;
+  width: 49% !important;
+  background-color: #fff;
+}
+.other-services .row .col-6 h3 {
+  color: #4c655a;
+}
+
+.contact-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/img/map.png");
+}
+.contact-section .main-green-btn {
+  right: 23px;
+  bottom: 48px;
+  color: #fff;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #3d594d;
+}
+.contact-section .form-section {
+  margin-left: 82px;
+  background-color: #3d5a4d;
+}
+.contact-section .form-section input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+.contact-section .form-section textarea {
+  border-top: none;
+  border-left: none;
+  border-radius: 0px;
+  border-right: none;
+  background-color: transparent;
+}
+.contact-section .form-section .form-check-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #fff;
+}
+
+.blog .card {
+  border: none;
+}
+
+footer {
+  color: #fff;
+  /* padding: 60px 65px 0; */
+  background-color: #3D5A4D;
+}
+footer h2{
+  color: #fff;
+}
+footer ul li {
+  list-style: none;
+  text-decoration: none;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer p{
+  color: #fff ;
+}
+footer .copyright-section{
+  background-color: #2A4639 ;
 }

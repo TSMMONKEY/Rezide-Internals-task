@@ -6,8 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
     <!----
  --
  --Header Section
@@ -112,7 +118,7 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-warning main-btn" href="#"
+                <a class="btn btn-warning main-btn" href="/valuation.php"
                   >Instant Valuation
                   <img src="/assets/img/exit.svg" alt="" width="15px"
                 /></a>
@@ -123,107 +129,104 @@
       </nav>
     </header>
 
-    <section class="main" style="height: 130vh">
-      <!----
+    <!----
 --
 --Header Section
 --
 ---->
-      <section class="hero-section">
-        <div class="card-img-overlay"></div>
-        <section class="hero-section-info">
-          <h1 class="card-title text-center">
-            Helping you find the home<br />
-            of your dreams
-          </h1>
-          <div class="hero-section-logo my-3">
-            <div class="line"></div>
-            <img
-              src="/assets/img/logo/logo-with-no-text.svg"
-              alt=""
-              width="20px"
+    <section class="hero-section">
+      <div class="card-img-overlay"></div>
+      <section class="hero-section-info">
+        <h1 class="card-title text-center">
+          Helping you find the home<br />
+          of your dreams
+        </h1>
+        <div class="hero-section-logo my-3">
+          <div class="line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="20px"
+          />
+          <div class="line"></div>
+        </div>
+        <p class="card-text mt-3">The Leicestershire Property specialist</p>
+        <div class="card-text mb-3">
+          <a href="/" class="btn btn-warning main-btn">Sell Your Home</a>
+          <a href="/" class="btn btn-warning main-btn">Buy A Home</a>
+        </div>
+        <div class="arrow-down my-4">
+          <img src="/assets/img/icons/arrow-down.svg" alt="" />
+        </div>
+        <div class="search">
+          <form class="input-group">
+            <input
+              type="text"
+              class="form-control align-left"
+              placeholder="Search by postcode or area......"
+              aria-label="Search by postcode or area with three button addons"
             />
-            <div class="line"></div>
-          </div>
-          <p class="card-text mt-3">The Leicestershire Property specialist</p>
-          <p class="card-text mb-3">
-            <a href="/" class="btn btn-warning main-btn">Sell Your Home</a>
-            <a href="/" class="btn btn-warning main-btn">Buy A Home</a>
-          </p>
-          <div class="arrow-down my-4">
-            <img src="/assets/img/icons/arrow-down.svg" alt="">
-          </div>
-          <div class="search">
-            <form class="input-group">
-              <input
-                type="text"
-                class="form-control align-left"
-                placeholder="Search by postcode or area......"
-                aria-label="Search by postcode or area with three button addons"
-              />
-              <button
-                class="btn btn-outline-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Min Beds
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-              </ul>
-              <button
-                class="btn btn-outline-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Min Price
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-              </ul>
-              <button
-                class="btn btn-outline-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Max Price
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-              </ul>
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Min Beds
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Min Price
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Max Price
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
 
-              <button
-                class="btn btn-outline-secondary search-btn"
-                type="button"
-              >
-                Search
-              </button>
-            </form>
-          </div>
-        </section>
+            <button class="btn btn-outline-secondary search-btn" type="button">
+              Search
+            </button>
+          </form>
+        </div>
       </section>
+    </section>
 
+    <section class="main px-5 mx-3">
       <!----
  --
  --About Section Style
@@ -232,7 +235,7 @@
 
       <section class="about text-center mt-5 pt-1">
         <img src="/assets/img/logo/logo-with-no-text.svg" alt="" width="50px" />
-        <h2>Why choose Rezide Group</h2>
+        <h2 class="mt-3">Why choose Rezide Group</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et
           officiis eaque? Voluptate minus animi nesciunt quis magnam voluptas
@@ -240,23 +243,35 @@
         </p>
         <ul class="row about-more-info mt-5">
           <li class="col-3">
-            <img src="/assets/img/exit.svg" alt="" width="35px" />
+            <img
+              src="/assets/img/icons/group-of-users-interface.png"
+              alt=""
+              width="35px"
+            />
             <h3>Family Run</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </li>
           <li class="col-3">
-            <img src="/assets/img/exit.svg" alt="" width="35px" />
-            <h3>Family Run</h3>
+            <img
+              src="/assets/img/icons/house-real-estate.png"
+              alt=""
+              width="35px"
+            />
+            <h3>45+ Years Experience</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </li>
           <li class="col-3">
-            <img src="/assets/img/exit.svg" alt="" width="35px" />
-            <h3>Family Run</h3>
+            <img
+              src="/assets/img/icons/shield-user-interface-symbol.png"
+              alt=""
+              width="35px"
+            />
+            <h3>Independent Company</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </li>
           <li class="col-3">
-            <img src="/assets/img/exit.svg" alt="" width="35px" />
-            <h3>Family Run</h3>
+            <img src="/assets/img/icons/flag-racing.png" alt="" width="35px" />
+            <h3>90% Sell Rate</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </li>
         </ul>
@@ -270,27 +285,27 @@
 ---->
 
       <section class="instant-valuation">
-        <div class="hero-section-logo mt-3 mb-3">
+        <div class="logo-with-no-text mt-3 mb-3">
           <div class="black-line"></div>
           <img
             src="/assets/img/logo/logo-with-no-text.svg"
             alt=""
-            width="20px"
+            width="35px"
           />
           <div class="black-line"></div>
         </div>
         <div class="row image-frame">
           <div class="col-12 row">
-            <div class="frame col-6">
+            <div class="frame col-6 p-0">
               <img
-                src="/assets/img/Rezide-Internals-Hero-Section.jpg"
+                src="/assets/img/first-framed-image.webp"
                 alt=""
-                width="50px"
+                width="100%"
               />
             </div>
-            <div class="first-frame-info col-6">
+            <div class="first-frame-info col-6 p-0">
               <h2>Get an instant valuation today</h2>
-              <p>
+              <p class="text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 dolores fuga ad sunt debitis minima quibusdam earum asperiores,
                 fugiat, consequuntur et soluta, doloribus eaque inventore?
@@ -308,8 +323,8 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consequuntur, aut? Optio vero maiores velit sequi!
                 </li>
-                <li class="nav-item">
-                  <a class="btn btn-warning" href="#"
+                <li class="nav-item" style="list-style: none">
+                  <a class="btn btn-warning main-btn" href="#"
                     >Instant Valuation
                     <img src="/assets/img/exit.svg" alt="" width="15px"
                   /></a>
@@ -317,11 +332,547 @@
               </ul>
             </div>
           </div>
-          <div class="col-6">.g-col-6</div>
-          <div class="col-6">.g-col-6</div>
+          <div class="col-6 property-info mt-5">
+            <div class="card">
+              <img
+                src="/assets/img/second-framed-image.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Buying a new property</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  aperiam quaerat placeat laborum, minus consequatur
+                  perspiciatis blanditiis facere ratione tenetur voluptatibus
+                  dicta eaque laudantium atque id inventore deleniti doloremque
+                  tempora culpa nisi! Odit, in ratione!
+                </p>
+                <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum necessitatibus excepturi, quaerat suscipit hic unde.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum necessitatibus excepturi, quaerat suscipit hic unde.
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary main-btn">Start Selling</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 property-info mt-5">
+            <div class="card">
+              <img
+                src="/assets/img/third-framed-image.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Selling a property</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis qui saepe aliquid, cumque rerum deleniti deserunt
+                  cupiditate alias at aliquam voluptatibus velit temporibus
+                  nesciunt dolorum aspernatur praesentium ipsum sit a harum,
+                  debitis dolorem. Maxime, repudiandae.
+                </p>
+                <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum necessitatibus excepturi, quaerat suscipit hic unde.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum necessitatibus excepturi, quaerat suscipit hic unde.
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary main-btn">Start Buying</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="featured-properties">
+        <div class="logo-with-no-text mt-3 mb-3">
+          <div class="black-line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="35px"
+          />
+          <div class="black-line"></div>
+        </div>
+        <h2 class="text-center">Featured properties</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+          dolores voluptatum facere minima repellat sint voluptatibus ducimus
+          praesentium dicta quas, sapiente, error molestias porro quis!
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="/assets/img/Rezide-Internals-Hero-Section.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="row">
+                  <h4 class="col-6">Title for the property</h4>
+                  <h4 class="col-6">$1,050,000</h4>
+                </div>
+                <div class="row">
+                  <h4 class="col-6">Rothley, Loughborough</h4>
+                  <h4 class="col-6">4 bed</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="/assets/img/Rezide-Internals-Hero-Section.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="row">
+                  <h4 class="col-6">Title for the property</h4>
+                  <h4 class="col-6">$1,050,000</h4>
+                </div>
+                <div class="row">
+                  <h4 class="col-6">Rothley, Loughborough</h4>
+                  <h4 class="col-6">4 bed</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="/assets/img/Rezide-Internals-Hero-Section.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="row">
+                  <h4 class="col-6">Title for the property</h4>
+                  <h4 class="col-6">$1,050,000</h4>
+                </div>
+                <div class="row">
+                  <h4 class="col-6">Rothley, Loughborough</h4>
+                  <h4 class="col-6">4 bed</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="/" class="btn btn-warning main-btn mt-5">View more Homes</a>
+        </div>
+      </section>
+
+      <section class="ratings text-center">
+        <div class="logo-with-no-text mt-3 mb-3">
+          <div class="black-line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="35px"
+          />
+          <div class="black-line"></div>
+        </div>
+        <h2>What our clients think of our services</h2>
+        <p class="mb-5 pb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          reprehenderit. Et voluptatum cum velit nulla dolores? Voluptate eum
+          sint magni amet enim! Hic.
+        </p>
+        <div class="row mt-5">
+          <div class="col-6">
+            <div class="gold-stars text-center">
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+            </div>
+            <h3 class="text-center">Joy to work with</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              amet ex sapiente mollitia, nam molestiae cumque vitae ab fugit
+              praesentium iste tenetur perspiciatis eligendi doloribus, voluptas
+              provident eaque! Nesciunt sit nam voluptatum. Magni corporis
+              similique laborum at eaque deleniti debitis, id quasi sit et
+              obcaecati dignissimos facere. Odio consequuntur sapiente vero, ad
+              aliquam quis. Dolor?
+            </p>
+            <h6 class="text-center">Clients Name</h6>
+          </div>
+          <div class="col-6">
+            <div class="gold-stars text-center">
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+              <img src="/assets/img/icons/gold-star.svg" alt="" width="30px" />
+            </div>
+            <h3 class="text-center">No stress just great results</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              amet ex sapiente mollitia, nam molestiae cumque vitae ab fugit
+              praesentium iste tenetur perspiciatis eligendi doloribus, voluptas
+              provident eaque! Nesciunt sit nam voluptatum. Magni corporis
+              similique laborum at eaque deleniti debitis, id quasi sit et
+              obcaecati dignissimos facere. Odio consequuntur sapiente vero, ad
+              aliquam quis. Dolor?
+            </p>
+            <h6 class="text-center">Clients Name</h6>
+          </div>
+        </div>
+      </section>
+
+      <section class="other-services my-5">
+        <div class="logo-with-no-text pt-5 mb-3">
+          <div class="black-line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="35px"
+          />
+          <div class="black-line"></div>
+        </div>
+        <h2 class="text-white text-center">Other services we have to offer</h2>
+        <div class="row">
+          <div class="col-6">
+            <h3>Discrete marketing</h3>
+            <p style="text-align: left">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+              obcaecati consequatur laboriosam quam praesentium temporibus,
+              numquam perferendis officiis totam quis aliquam soluta libero
+              impedit quisquam laborum ipsum est ratione porro dolorum ex,
+              minima vitae? Cupiditate.
+            </p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore numquam reiciendis excepturi labore iste nisi?
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore numquam reiciendis excepturi labore iste nisi?
+              </li>
+            </ul>
+            <div class="more-info-btn">
+              <a class="btn btn-warning main-btn" href="/valuation.php"
+                >Instant Valuation
+                <img src="/assets/img/exit.svg" alt="" width="15px"
+              /></a>
+            </div>
+          </div>
+          <div class="col-6">
+            <h3>Buyers club</h3>
+            <p style="text-align: left">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+              obcaecati consequatur laboriosam quam praesentium temporibus,
+              numquam perferendis officiis totam quis aliquam soluta libero
+              impedit quisquam laborum ipsum est ratione porro dolorum ex,
+              minima vitae? Cupiditate.
+            </p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore numquam reiciendis excepturi labore iste nisi?
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore numquam reiciendis excepturi labore iste nisi?
+              </li>
+            </ul>
+            <div class="more-info-btn">
+              <a class="btn btn-warning main-btn" href="/valuation.php"
+                >Instant Valuation
+                <img src="/assets/img/exit.svg" alt="" width="15px"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="logo-with-no-text mt-3 pb-5">
+          <div class="black-line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="35px"
+          />
+          <div class="black-line"></div>
+        </div>
+      </section>
+
+      <section class="descover-more row my-5">
+        <div class="col-6 p-0">
+          <div class="col-12">
+            <img
+              src="/assets/img/third-framed-image.webp"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="row mt-3">
+            <div class="col-4">
+              <img
+                src="/assets/img/third-framed-image.webp"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div class="col-4">
+              <img src="/assets/img/old-john-framed.webp" alt="" width="100%" />
+            </div>
+            <div class="col-4">
+              <img
+                src="/assets/img/third-framed-image.webp"
+                alt=""
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 second-section p-0">
+          <h2>Discover what is on your doorstep within Leicestershire</h2>
+          <p style="text-align: left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            officiis natus eaque numquam beatae vitae! Debitis quaerat sint
+            minima consequatur nulla dignissimos quae vitae nihil deleniti
+            rerum! Corrupti quas repellat nostrum fugiat incidunt unde suscipit.
+          </p>
+          <ul>
+            <li>
+              <p style="text-align: left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                modi quae quod dolorum nulla?
+              </p>
+            </li>
+            <li>
+              <p style="text-align: left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                modi quae quod dolorum nulla?
+              </p>
+            </li>
+            <li>
+              <p style="text-align: left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                modi quae quod dolorum nulla?
+              </p>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <a class="navbar-brand" href="#"
+                ><img
+                  src="/assets/img/logo/logo-with-text.png"
+                  alt=""
+                  class="logo"
+                  width="97px"
+                  height="97px"
+              /></a>
+            </div>
+            <div class="col-6">
+              <a href="/" class="btn btn-warning main-btn">Buy A Home</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section clas class="contact mt-5">
+        <div class="logo-with-no-text mt-3 mb-3">
+          <div class="black-line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="35px"
+          />
+          <div class="black-line"></div>
+        </div>
+
+        <div class="row contact-section">
+          <div class="col-6 form-section p-5 text-white">
+            <h2 class="text-white">Got a question?</h2>
+            <div class="form-floating">
+              <input
+                type="name"
+                class="form-control"
+                id="floatingName"
+                placeholder="Name"
+              />
+              <label for="floatingName">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Message</label>
+            </div>
+            <div class="form-check my-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label text-white" for="flexCheckDefault">
+                I agree to the terms in your
+                <a href="#" class="text-white fw-bold">Privacy Policy</a>
+              </label>
+            </div>
+            <a href="/" class="btn btn-warning main-btn">SEND</a>
+          </div>
+          <div class="col-6">
+            <a href="/" class="btn btn-warning main-btn main-green-btn">Directions</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog text-center my-5">
+        <div class="logo-with-no-text my-5">
+          <div class="black-line"></div>
+          <img
+            src="/assets/img/logo/logo-with-no-text.svg"
+            alt=""
+            width="35px"
+          />
+          <div class="black-line"></div>
+        </div>
+        <h2>Latest news and information</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          obcaecati distinctio vel nisi totam numquam accusantium consequuntur,
+          quas et. Suscipit deserunt possimus, sed fuga nemo eaque nulla
+          incidunt similique explicabo.
+        </p>
+        <div class="row my-5">
+          <div class="col-4">
+            <div class="card" style="width: 100%">
+              <img
+                src="/assets/img/second-framed-image.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-opacity-10" style="width: 100%">
+              <img
+                src="/assets/img/second-framed-image.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%">
+              <img
+                src="/assets/img/second-framed-image.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="/" class="btn btn-warning main-btn">Read more Blogs</a>
+      </section>
     </section>
+
+    <footer class="row">
+      <div class="col-4">
+        <h2>Sitemap</h2>
+        <ul class="mt-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <h2 class="col-4">Services</h2>
+        <ul class="mt-4">
+          <li><a href="#">Buyers Club</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">Properties</a></li>
+          <li><a href="#">Instant Valuation</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/assets/img/logo/logo-with-text.png"
+            alt=""
+            class="logo"
+            width="70px"
+            height="70px"
+        /></a>
+        <p class="mt-4" style="text-align: left;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus
+          magnam repudianda.
+        </p>
+        <h5>Email: <strong>team@rezide.group</strong></h5>
+        <h5>Tel: <strong>015 0927 4474</strong></h5>
+      </div>
+      <div class="row col-12 copyright-section">
+        <div class="col-4">Copyright 2024 Rezide Group</div>
+        <div class="col-4 d-flex justify-content-between" style="padding: 0 70px;">
+          <a href="#"><img src="/assets/img/icons/linkedin.svg" alt="linkedin" width="30px"></a>
+          <a href="#"><img src="/assets/img/icons/instagram.svg" alt="instagram" width="30px"></a>
+          <a href="#">          <img src="/assets/img/icons/facebook.svg" alt="facebook" width="38px"></a>
+        </div>
+        <div class="col-4">
+          Website design & marketing be <a href="#" class="text-white fw-bold">Altitude</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
